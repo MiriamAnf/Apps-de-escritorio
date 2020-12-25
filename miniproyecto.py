@@ -178,7 +178,6 @@ class MyTreeView(QTreeView):
         window.addDockWidget(Qt.LeftDockWidgetArea, dockwidget)
         barra_de_menus.addAction(dockwidget.toggleViewAction())
 
-
     def open_file(self):
         global file_path
         if not save_if_modified:
@@ -196,7 +195,6 @@ class MyTreeView(QTreeView):
 
 file_explorer = MyTreeView()
 files = QFileSystemModel()
-
 
 window.show()
 app.exec()
